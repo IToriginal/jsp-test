@@ -6,6 +6,11 @@ plugins {
 
 group = 'example'
 version = '0.0.1-SNAPSHOT'
+apply plugin: 'war'
+
+war {
+    enabled= false
+}
 
 java {
     toolchain {
@@ -51,4 +56,8 @@ dependencies {
 
 tasks.named('test') {
     useJUnitPlatform()
+}
+
+tasks.named('jar') {
+    enabled = false
 }
