@@ -46,8 +46,8 @@ dependencies {
     compileOnly 'org.projectlombok:lombok'
     annotationProcessor 'org.projectlombok:lombok'
 
-    // MariaDB(Database)
-    runtimeOnly 'org.mariadb.jdbc:mariadb-java-client'
+    // oracleDB(Database)
+    implementation group: 'com.oracle.database.jdbc', name: 'ojdbc11', version: '23.3.0.23.09'
 
     // Test
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
